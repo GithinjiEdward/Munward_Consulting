@@ -160,9 +160,9 @@ body {
 ============================================================ */
 .services,
 .partner-us-section {
-  background: var(--white);
-  padding: 40px 30px;
-  text-align: center;
+   background: var(--white);
+   padding: 60px 10% 80px;
+   text-align: center;
 }
 
 .services h2,
