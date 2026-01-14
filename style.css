@@ -110,7 +110,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 30px 100px 0;
+  padding: 60px 100px;
 }
 
 .hero h1 {
@@ -161,7 +161,7 @@ body {
 .services,
 .partner-us-section {
    background: var(--white);
-   padding: 60px 10% 80px;
+   padding: 40px 10% 40px;
    text-align: center;
 }
 
@@ -169,7 +169,7 @@ body {
 .partner-us-section h2 {
   font-size: 28px;
   color: var(--primary);
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .service-card h3 {
