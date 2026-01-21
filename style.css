@@ -464,6 +464,53 @@ body {
 .it-page .philosophy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_consultancy.jpg") center/cover no-repeat;}
 
 /* ============================================================
+   7. ACCOUNTING PAGE – CARD BACKGROUNDS
+============================================================ */
+
+/* SECTION 1: FINANCIAL MANAGEMENT & REPORTING */
+.accounting-page .mission {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/bookkeeping.jpg") center/cover no-repeat;
+}
+
+.accounting-page .vision {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/reconciliation.jpg") center/cover no-repeat;
+}
+
+.accounting-page .team {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/financial_reporting.jpg") center/cover no-repeat;
+}
+
+.accounting-page .philosophy {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/accounting_consultancy.jpg") center/cover no-repeat;
+}
+
+/* SECTION 2: COMPLIANCE, AUDIT & BUSINESS ADVISORY */
+.accounting-page .it-page + .it-page .mission {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/tax_compliance.jpg") center/cover no-repeat;
+}
+
+.accounting-page .it-page + .it-page .vision {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/audit.jpg") center/cover no-repeat;
+}
+
+.accounting-page .it-page + .it-page .team {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/business_advisory.jpg") center/cover no-repeat;
+}
+
+.accounting-page .it-page + .it-page .philosophy {
+  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+              url("images/risk_management.jpg") center/cover no-repeat;
+}
+
+
+/* ============================================================
    7. MODALS
 ============================================================ */
 .modal {
