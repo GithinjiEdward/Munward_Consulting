@@ -96,7 +96,7 @@ body {
   height: 55vh;
   background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
               url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d')
-              center/contain no-repeat;
+              center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -106,7 +106,7 @@ body {
 .it-hero {
    height: 55vh;
    background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
-              url('images/it.jpg') center/ contain no-repeat;
+              url('images/it.jpg') center/ cover no-repeat;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
@@ -116,7 +116,7 @@ body {
 .accounting-hero {
    height: 55vh;
    background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
-              url('images/accounting.jpg') center/ contain no-repeat;
+              url('images/accounting.jpg') center/ cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
