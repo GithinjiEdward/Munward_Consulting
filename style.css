@@ -110,7 +110,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
-   padding: 60px 100px;
+   padding: 40px 100px;
 }
 
 .accounting-hero {
@@ -120,7 +120,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 60px 100px;
+    padding: 40px 100px;
 }
 
 .hero h1 {
