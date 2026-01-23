@@ -550,7 +550,7 @@ body {
 .hr-performance { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/performance.jpg') center/cover no-repeat; }
 .hr-training    { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/training.jpg') center/cover no-repeat; }
 .hr-relations   { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/relations.jpg') center/cover no-repeat; }
-.hr-audit       { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/audit.jpg') center/cover no-repeat; }
+.hr-audit       { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hr-compliance.png') center/cover no-repeat; }
 
 
 /* ============================================================
