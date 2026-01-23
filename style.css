@@ -501,7 +501,7 @@ body {
 
 .accounting-page .it-page + .it-page .team {
   background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/business_advisory.jpg") center/cover no-repeat;
+              url("images/registration.png") center/cover no-repeat;
 }
 
 .accounting-page .it-page + .it-page .philosophy {
