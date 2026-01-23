@@ -9,11 +9,11 @@
   --card-bg: #f0f6ff; /*Alice Blue*/
   --white: #d9d9d9; /*Gray 85*/
   --text-dark: #333; /*Dark Gray*/
-
+  --button-radius: 5px;
   --radius: 10px;
   --transition: 0.3s ease;
   --shadow: 0 5px 15px rgba(0,0,0,0.1);
-
+  --btn-shadow: 0 4px 12px rgba(0,0,0,0.15);
   --hr-color: #4a90e2;
   --it-color: #7ed321;
   --accounting-color: #f5a623;
@@ -148,21 +148,25 @@ body {
 .btn-primary {
    background: var(--accent);
    border: none;
-   padding: 10px 20px;
-   border-radius: var(--radius);
+   padding: 12px 28px;
+   border-radius: var(--button-radius);
    color: var(--primary);
-   font-weight: bold;
+   font-weight: 600;
    cursor: pointer;
-   text-transform: uppercase;
-   transition: transform var(--transition), box-shadow var(--transition);
-   width: fit-content;
+   text-decoration: none;
+   text-transform: none;
    display: inline-block;
-   margin-top: 10px;
+   transition: all var(--transition);
+   box-shadow: 1 2px 4px rbga(0,0,0,0.1);
+   font-size: 16px;
+   letter-spacing: 0.5px;
 }
 
 .btn-primary: hover {
-   transform: translateY(-3px);
-   box-shadow: var(--shadow);
+   background: var(--primary);
+   color: var(--white);
+   transform: translateY(-2px);
+   box-shadow: var(--btn-shadow);
 }
 
 /* ============================================================
@@ -177,8 +181,9 @@ body {
 
 .partner-us-consult {
    background: var(--white);
-   padding: 30px 10% 0px;
+   padding: 20px 10% 20px;
    text-align: center;
+   margin-bottom: 0;
 }
 
 .services h2,
@@ -597,6 +602,7 @@ footer {
   background: var(--primary);
   color: var(--white);
   padding: 20px 30px;
+  margin-top: 0;
 }
 
 .footer-container {
