@@ -116,7 +116,7 @@ body {
 .hr-hero {
    height: 55vh;
    background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
-              url('images/hr.png') center/ cover no-repeat;
+              url('images/hrm.png') center/ cover no-repeat;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
