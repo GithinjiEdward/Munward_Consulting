@@ -149,20 +149,18 @@ body {
 /* ============================================================
    4. SERVICES / PARTNER / GENERIC SECTIONS
 ============================================================ */
+/* 4a. Section Layouts */
 .services,
-.partner-us-section {
+.partner-us-section,
+.partner-us-consult {
    background: var(--gray85);
-   padding: 30px 10% 30px;
+   padding: 30px 10%;
    text-align: center;
 }
 
 .partner-us-consult {
-   background: var(--gray85);
-   padding-top: 0px !important;
+   padding-top: 0;
    padding-bottom: 20px;
-   text-align: center;
-   margin-bottom: 0px;
-   margin-top: -10px;
 }
 
 .services h2,
@@ -172,11 +170,7 @@ body {
   margin-bottom: 10px;
 }
 
-.service-card h3 {
-   margin-bottom: 10px;
-   color: var(--primary);
-}
-
+/* 4b. Grid & Card System */
 .service-container,
 .about-container,
 .value-container {
@@ -184,7 +178,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 15px;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .service-card,
@@ -195,12 +189,21 @@ body {
    border-radius: var(--radius);
    transition: var(--transition);
    border-bottom: 4px solid var(--accent);
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
 }
 
 .service-card:hover,
 .value-card:hover {
   transform: translateY(-2px);
   box-shadow: var(--shadow);
+}
+
+/* 4c. Icons & Text */
+.service-card h3 {
+   margin-bottom: 10px;
+   color: var(--primary);
 }
 
 .partner-icon {
@@ -212,23 +215,20 @@ body {
 .service-icon { 
    width: 40px; 
    height: 40px; 
-   margin: auto; 
+   margin: 0 auto 10px; 
    display: block; 
-   margin-bottom: 10px; 
 }
 
-/* ------------- SERVICES DROPDOWN MENU -------------- */
-.dropdown {
-  position: relative;
-}
+/* 4d. SERVICES DROPDOWN MENU (Global Component) */
+.dropdown { position: relative; }
 
 .dropdown-toggle {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+   display: flex;
+   align-items: center;
+   gap: 6px;
+   cursor: pointer;
 }
 
-/* Dropdown box */
 .dropdown-menu {
   position: absolute;
   top: 100%;
