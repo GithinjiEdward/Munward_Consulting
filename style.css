@@ -541,10 +541,10 @@ body {
 ============================================================ */
 
 /* Section 1 */
-.hr-recruitment { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/recruitment.jpg') center/contain no-repeat; }
-.hr-onboarding  { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/onboarding.jpg') center/contain no-repeat; }
-.hr-payroll     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/payroll.jpg') center/contain no-repeat; }
-.hr-records     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/records.png') center/contain no-repeat; }
+.hr-recruitment { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/recruitment.jpg') center/cover no-repeat; }
+.hr-onboarding  { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/onboarding.jpg') center/cover no-repeat; }
+.hr-payroll     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/payroll.jpg') center/cover no-repeat; }
+.hr-records     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/records.png') center/cover no-repeat; }
 
 /* Section 2 */
 .hr-performance { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/performance.jpg') center/cover no-repeat; }
