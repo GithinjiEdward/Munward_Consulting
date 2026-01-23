@@ -113,6 +113,16 @@ body {
    padding: 20px 100px;
 }
 
+.hr-hero {
+   height: 55vh;
+   background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
+              url('images/hrm.png') center/ cover no-repeat;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   padding: 20px 100px;
+}
+
 .accounting-hero {
    height: 55vh;
    background: linear-gradient(to bottom, #d9d9d9, #d9d9d9a0),
@@ -129,7 +139,9 @@ body {
   color: var(--primary);
 }
 
-.it-hero h1 {
+.it-hero h1,
+.hr-hero h1,
+.accounting-hero h1
   font-size: 30px;
   margin-bottom: 17px;
   color: var(--primary);
@@ -140,7 +152,9 @@ body {
   margin-bottom: 20px;
 }
 
-.it-hero p {
+.it-hero p,
+.hr-hero p,
+.accounting p{
   font-size: 15px;
   margin-bottom: 20px;
 }
