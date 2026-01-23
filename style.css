@@ -506,7 +506,7 @@ body {
 
 .accounting-page .it-page + .it-page .philosophy {
   background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/compliance.png") center/cover no-repeat;
+              url("images/compliance.png") center/contain no-repeat;
 }
 
 
