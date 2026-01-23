@@ -175,6 +175,12 @@ body {
    text-align: center;
 }
 
+.partner-us-consult {
+   background: var(--white);
+   padding: 30px 10% 0px;
+   text-align: center;
+}
+
 .services h2,
 .partner-us-section h2 {
   font-size: 28px;
