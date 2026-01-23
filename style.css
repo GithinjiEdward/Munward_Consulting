@@ -6,17 +6,12 @@
   --accent: #d9c179; /*Gold*/
   --light-bg: #f7f7f7; /*Gray 97*/
   --service-bg: #eef3f9; /*Light Blue*/
-  --card-bg: #f0f6ff; /*Alice Blue*/
-  --white: #d9d9d9; /*Gray 85*/
+  --gray85: #d9d9d9; /*Gray 85*/
   --text-dark: #333; /*Dark Gray*/
   --button-radius: 5px;
   --radius: 10px;
   --transition: 0.3s ease;
   --shadow: 0 5px 15px rgba(0,0,0,0.1);
-  --btn-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  --hr-color: #4a90e2;
-  --it-color: #7ed321;
-  --accounting-color: #f5a623;
 }
 
 * {
@@ -36,25 +31,17 @@ body {
    2. NAVIGATION
 ============================================================ */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--white);
-  padding: 10px 40px;
-  position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: var(--gray85);
+   padding: 10px 40px;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
 }
 
-@media (min-width: 768px) {
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-}
-
-.logo-img {
-  max-height: 60px;
-}
+.logo-img { max-height: 60px;}
 
 .nav-links {
   list-style: none;
@@ -69,11 +56,9 @@ body {
   transition: color var(--transition);
 }
 
-.nav-links a:hover {
-  color: var(--accent);
-}
+.nav-links a:hover { color: var(--accent);}
 
-/* ------------------ Hamburger ------------------------ */
+/* ---- Hamburger Styles---------- */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -90,7 +75,7 @@ body {
 }
 
 /* ============================================================
-   3. HERO
+   3. HERO SECTIONS
 ============================================================ */
 .hero {
   height: 55vh;
@@ -178,9 +163,9 @@ body {
 
 .btn-primary: hover {
    background: var(--primary);
-   color: var(--white);
+   color: var(--gray85);
    transform: translateY(-2px);
-   box-shadow: var(--btn-shadow);
+   box-shadow: var(--shadow);
 }
 
 /* ============================================================
@@ -188,13 +173,13 @@ body {
 ============================================================ */
 .services,
 .partner-us-section {
-   background: var(--white);
+   background: var(--gray85);
    padding: 30px 10% 30px;
    text-align: center;
 }
 
 .partner-us-consult {
-   background: var(--white);
+   background: var(--gray85);
    padding-top: 0px !important;
    padding-bottom: 20px;
    text-align: center;
@@ -270,7 +255,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
-  background: var(--white);
+  background: var(--gray85);
   min-width: 220px;
   list-style: none;
   padding: 8px 0;
@@ -305,14 +290,14 @@ body {
    5. ABOUT PAGE (DETAILED)
 ============================================================ */
 .about {
-  background: var(--white);
+  background: var(--gray85);
   padding: 30px 10%;
   text-align: center;
 }
 
 .about-page {
    padding: 60px 8% 80px;
-   background: var(--white);
+   background: var(--gray85;
 }
 
 .logo-page-container {
@@ -338,7 +323,7 @@ body {
 }
 
 .logo-page {
-  background: var(--white);
+  background: var(--gray85);
   padding: 80px 8% 90px;
 }
 
@@ -439,14 +424,14 @@ body {
    6. IT SERVICE PAGE (DETAILED)
 ============================================================ */
 .about {
-  background: var(--white);
+  background: var(--gray85);
   padding: 40px 30px;
   text-align: center;
 }
 
 .it-page {
    padding: 40px 10% 80px;
-   background: var(--white);
+   background: var(--gray85);
 }
 
 .it-page + .it-page {
@@ -571,7 +556,7 @@ body {
 }
 
 .modal-content {
-   background: var(--white);
+   background: var(--gray85);
    padding: 30px;
    max-width: 500px;
    border-radius: var(--radius);
@@ -632,7 +617,7 @@ body {
 ============================================================ */
 footer {
   background: var(--primary);
-  color: var(--white);
+  color: var(--gray85);
   padding: 20px 30px;
   margin-top: 0;
 }
@@ -656,7 +641,7 @@ footer {
 } 
 
 .footer-column a { 
-   color: var(--white); 
+   color: var(--gray85); 
    text-decoration: none; 
    transition: color var(--transition); 
 } 
@@ -686,7 +671,7 @@ footer {
      position: absolute;
      top: 60px;
      right: 20px;
-     background: var(--white);
+     background: var(--gray85);
      width: 200px;
      flex-direction: column;
      display: none;
@@ -716,7 +701,7 @@ footer {
 
    .logo-page { 
       padding: 80px 8% 90px; 
-      background: var(--white); 
+      background: var(--gray85); 
       position: relative; 
    }
 
