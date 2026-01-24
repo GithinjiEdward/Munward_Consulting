@@ -8,6 +8,7 @@
   --service-bg: #eef3f9; /*Light Blue*/
   --gray85: #d9d9d9; /*Gray 85*/
   --text-dark: #333; /*Dark Gray*/
+  --white: #fffff;
   --button-radius: 5px;
   --radius: 10px;
   --transition: 0.3s ease;
@@ -59,7 +60,6 @@ body {
 
 .nav-links a:hover { color: var(--accent);}
 
-/* ---- Hamburger Styles---------- */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -92,7 +92,7 @@ body {
    letter-spacing: 0.5px;
 }
 
-.btn-primary: hover {
+.btn-primary:hover {
    background: var(--primary);
    color: var(--gray85);
    transform: translateY(-2px);
@@ -114,35 +114,21 @@ body {
    color: var(--primary);
 }
 
-.hero h1, .it-hero h1, hr-hero h1, .accounting-hero h1 {
+.hero h1, .it-hero h1, .hr-hero h1, .accounting-hero h1 {
    font-size: 30px;
    margin-bottom: 17px;
    color: var(--primary);
 }
 
-.hero p, it-hero p, .hr-hero p, .accounting-hero p {
+.hero p, .it-hero p, .hr-hero p, .accounting-hero p {
    font-size: 17px;
    margin-bottom: 20px;
 }
 
-.hero { 
-  background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d'); 
-}
-
-.it-hero { 
-  background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), 
-  url('images/it.jpg'); 
-}
-
-.accounting-hero { 
-  background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), 
-  url('images/accounting.jpg'); 
-}
-
-.hr-hero { 
-  background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), 
-  url('images/hr.jpg'); 
-}
+.hero            { background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d'); }
+.it-hero         { background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), url('images/it.jpg'); }
+.accounting-hero { background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), url('images/accounting.jpg'); }
+.hr-hero         { background-image: linear-gradient(to bottom, rgba(217, 217, 217, 1), rgba(217, 217, 217, 0.63)), url('images/hrm.png'); }
 
 /* ============================================================
    4. SERVICES / PARTNER / GENERIC SECTIONS
@@ -154,10 +140,7 @@ body {
    text-align: center;
 }
 
-.partner-us-consult {
-   padding-top: 0;
-   padding-bottom: 20px;
-}
+.partner-us-consult { padding-top: 0; padding-bottom: 20px; }
 
 .services h2, .partner-us-section h2, .about h2 {
   font-size: 28px;
@@ -192,32 +175,15 @@ body {
    justify-content: space-between;
 }
 
-.service-card:hover, .value-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow);
-}
+.service-card:hover, .value-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.service-card h3 { margin-bottom: 10px; color: var(--primary); }
+.partner-icon { font-size: 34px; color: var(--accent); margin-bottom: 10px; }
+.service-icon { width: 40px; height: 40px; margin: 0 auto 10px; display: block; }
 
-.service-card h3 {
-   margin-bottom: 10px;
-   color: var(--primary);
-}
-
-.partner-icon {
-   font-size: 34px;
-   color: var(--accent);
-   margin-bottom: 10px;
-}
-
-.service-icon { 
-   width: 40px; 
-   height: 40px; 
-   margin: 0 auto 10px; 
-   display: block; 
-}
-
-/* 4d. SERVICES DROPDOWN MENU (Global Component) */
+/* ============================================================
+   5. DROPDOWN & PAGE LAYOUTS & TYPOGRAPHY
+============================================================ */
 .dropdown { position: relative; }
-
 .dropdown-toggle {
    display: flex;
    align-items: center;
@@ -248,31 +214,18 @@ body {
   transition: background var(--transition);
 }
 
-.dropdown-menu li a:hover {
-  background: var(--service-bg);
-}
+.dropdown-menu li a:hover { background: var(--service-bg); }
 
-/* Desktop hover */
 @media (min-width: 769px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
+  .dropdown:hover .dropdown-menu { display: block; }
 }
 
-
-/* ============================================================
-   5. ABOUT & SERVICE PAGE LAYOUTS (DETAILED)
-============================================================ */
-
-/* 5a. Page Containers */
 .about-page, .logo-page, .it-page, .hr-page, .acc-page {
   padding: 60px 8% 80px;
   background: var(--gray85);
 }
 
-.logo-page-container, 
-.about-page-container, 
-.it-page-container {
+.logo-page-container, .about-page-container, .it-page-container {
    background: var(--service-bg);
    padding: 20px; 
    border-radius: var(--radius); 
@@ -282,7 +235,6 @@ body {
    align-items: center;
 }
 
-/* 5b. Typography & Tags */
 .about-tag {
    color: var(--accent); 
    font-weight: 600; 
@@ -299,27 +251,9 @@ body {
    color: var(--primary);
 }
 
-.about-text p { 
-   color: #555; 
-   line-height: 1.7; 
-   margin-bottom: 18px; 
-} 
-
-.about-highlight { 
-   font-style: italic; 
-   font-weight: 600; 
-   color: #222; 
-}
-
-/* 5c. Grid for Mission/Vision/Team Cards */
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-/* 5d. Card Base Style */
-
+.about-text p { color: #555; line-height: 1.7; margin-bottom: 18px; } 
+.about-highlight { font-style: italic; font-weight: 600; color: #222; }
+.about-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .about-card {
    position: relative;
    height: 180px;
@@ -335,13 +269,10 @@ body {
    text-align: center;
 }
 
-.about-card:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
-}
+.about-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.18); }
 
 /* ============================================================
-   5e. UNIQUE CARD BACKGROUNDS (NO MORE "+" SELECTORS)
+   6. UNIQUE CARD BACKGROUNDS (NO MORE "+" SELECTORS)
 ============================================================ */
 /* Group 1: Standard About Us */
 .mission        { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/mission.png") center/cover; }
@@ -379,12 +310,6 @@ body {
 .acc-registration   { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/registration.png") center/cover no-repeat; }
 .acc-consultation   { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/compliance.png") center/contain no-repeat; }
 
-/* 5f. Logo Grid Layout */
-.logo-grid { 
-   display: grid; 
-   grid-template-columns: 0.8fr 1.2fr; 
-   gap: 20px; 
-}
 /* ============================================================
    6. SERVICE CARD TYPOGRAPHY & OVERLAYS
 ============================================================ */
@@ -402,7 +327,6 @@ body {
    transition: var(--transition);
 }
 
-/* 6b. IT Specific Overlays */
 .it-page .about-card::before {
    content: "";
    position: absolute;
@@ -411,19 +335,9 @@ body {
    z-index: 1;
 }
 
-/* 6c. Hover Flair */
-.about-card:hover span {
-   transform: translateY(0px);
-   color: var(--white);
-}
+.about-card:hover span { transform: translateY(0px); color: var(--white); }
 
-/* 6d. Logo Page Specifics (Re-adding the Logo Grid) */
-.logo-grid { 
-   display: grid; 
-   grid-template-columns: 0.8fr 1.2fr; 
-   gap: 20px; 
-   align-items: center;
-}
+.logo-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 20px; align-items: center; }
 
 /* ============================================================
    7. MODALS
@@ -439,10 +353,7 @@ body {
   backdrop-filter: blur(4px); /* Adds a premium touch */
 }
 
-.modal.active {
-  display: flex;
-}
-
+.modal.active { display: flex; }
 .modal-content {
    background: var(--gray85);
    padding: 30px;
@@ -460,10 +371,8 @@ body {
    text-align: center;
 } 
 
-.modal-content p { 
-   line-height: 1.6; 
-   color: var(--text-dark);
-}
+.modal-content p { line-height: 1.6; color: var(--text-dark); }
+.modal-content form { display: flex; flex-direction: column; gap: 15px; }
 
 .close {
    position: absolute;
@@ -476,19 +385,8 @@ body {
    transition: color var(--transition);
 }
 
-.close:hover {
-  color: var(--accent);
-}
-
-/* 7e. Form Styling (Inside Modal) */
-.modal-content form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.modal-content input, 
-.modal-content textarea {
+.close:hover { color: var(--accent); }
+.modal-content input, .modal-content textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -497,37 +395,13 @@ body {
   font-family: inherit;
 }
 
-.modal-content textarea {
-  height: 100px;
-  resize: none; /* Prevents users from breaking the layout */
-}
-
-/* 7f. Entrance Animation */
-@keyframes modalFadeIn {
-   from { 
-    opacity: 0; 
-    transform: translateY(-20px); 
-  }
-  to { 
-    opacity: 1; 
-    transform: translateY(0); 
-  }
-}
+.modal-content textarea { height: 100px; resize: none; }
 
 /* ============================================================
-   7. CONTACT
+   8. CONTACT
 ============================================================ */
-.contact {
-   padding: 40px 25px;
-   text-align: center;
-   background: var(--light-bg);
-}
-
-.contact h2 {
-   color: var(--primary);
-   margin-bottom: 20px;
-}
-
+.contact { padding: 40px 25px; text-align: center; background: var(--light-bg); }
+.contact h2 { color: var(--primary); margin-bottom: 20px; }
 .contact form {
    max-width: 350px;
    margin: 0 auto;
@@ -537,28 +411,10 @@ body {
    animation: scaleIn 0.6s ease-out;
 }
 
-/* -------------------------- ANIMATION ---------------- */ 
-@keyframes scaleIn { 
-   from { 
-      transform: scale(0.9); 
-      opacity: 0; 
-   } 
-   to { 
-      transform: scale(1); 
-      opacity: 1; 
-   } 
-}
-
 /* ============================================================
-   8. FOOTER
+   9. FOOTER
 ============================================================ */
-footer {
-  background: var(--primary);
-  color: var(--gray85);
-  padding: 20px 30px;
-  margin-top: 0;
-}
-
+.footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; margin-top: 0; }
 .footer-container {
    max-width: 1200px;
    margin: auto;
@@ -568,22 +424,9 @@ footer {
    gap: 20px;
 }
 
-.footer-column { 
-   min-width: 150px;
-   flex: 1;
-} 
-
-.footer-column h3 { 
-   color: var(--accent);
-   margin-bottom: 6px;
-   font-size: 18px;
-} 
-
-.footer-column ul {
-   list-style: none;
-   padding: 0;
-}
-
+.footer-column { min-width: 150px; flex: 1; } 
+.footer-column h3 { color: var(--accent); margin-bottom: 6px; font-size: 18px; } 
+.footer-column ul { list-style: none; padding: 0; }
 .footer-column a { 
    color: var(--gray85); 
    text-decoration: none;
@@ -592,19 +435,9 @@ footer {
    transition: color var(--transition); 
 } 
 
-.footer-column a:hover { 
-   color: var(--accent); 
-} 
-
-.social-links i { 
-   font-size: 16px; 
-   margin-right: 8px;
-   transition: transform var(--transition);
-}
-
-.social-links i:hover {
-   transform: scale(1.2);
-}
+.footer-column a:hover { color: var(--accent); } 
+.social-links i { font-size: 16px; margin-right: 8px; transition: transform var(--transition); }
+.social-links i:hover { transform: scale(1.2); }
 
 .footer-bottom { 
    border-top: 1px solid #4a4a4a; 
@@ -615,10 +448,9 @@ footer {
 }
 
 /* ============================================================
-   9. RESPONSIVE
+   10. RESPONSIVE & ANIMATIONS
 ============================================================ */
 @media (max-width: 768px) {
-/* ---- Navigation Mobile Menu ---- */
   .nav-links {
      gap: 15px;
      position: absolute;
@@ -635,45 +467,24 @@ footer {
   }
    
    .nav-links.active { display: flex; }
-   
    .hamburger { display: flex; }
-
-   /* ---Dropdown Mobile Behavior ---*/
   .dropdown.open .dropdown-menu {
      display: block;
      position: static;
-     box-shadow: none;
+     box-shadow: none;e-container { grid-template-columns: 1fr; gap: 30px;
      padding-let: 10px;
   }
-
-   /* --- Layout Adjustments --- */
-   .about-container, 
-   .service-container, 
-   .value-container {
-    grid-template-columns: 1fr; /* Force single column on mobile */
-  }
-   
-   .about-page-container,
-   .logo-page-container,
-   .it-page-container {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-   
-   .logo-page { 
-      padding: 60px 5% 70px; 
-      background: var(--gray85); 
-      position: relative; 
-   }
-   
-   .about-card {
-      height: auto;
-      min-height: 140px;
-      padding: 25px 15px;
-   }
-   
-   .values-image-wrapper img { 
-      max-width: 100%;
-      height: auto;
-   }
+   .about-container, .service-container, .value-contar { grid-template-columns: 1fr; }
+   .about-page-container, .logo-page-container, .it-page-container { grid-template-columns: 1fr; gap: 30px; }
+   .logo-page { padding: 60px 5% 70px; background: var(--gray85); position: relative;  }
+   .about-card { height: auto; min-height: 140px; padding: 25px 15px; }
+   .values-image-wrapper img { max-width: 100%; height: auto;}
 }
+
+   @keyframes modalFadeIn { from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }}
+
+   @keyframes scaleIn { from { transform: scale(0.9); opacity: 0; } 
+   to { transform: scale(1); opacity: 1; }}
+
+   
