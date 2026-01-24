@@ -357,6 +357,11 @@ body {
 .team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
 .philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
 
+/* Group 2: IT Services (Use these classes in it.html) */
+
+.it-repairs { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair_maintenance.jpg") center/cover no-repeat;}
+
+
 
 
 .it-page + .it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/networking.jpg") center/cover;}
@@ -367,16 +372,6 @@ body {
 /* ============================================================
    6. IT SERVICE PAGE (DETAILED)
 ============================================================ */
-.about {
-  background: var(--gray85);
-  padding: 40px 30px;
-  text-align: center;
-}
-
-.it-page {
-   padding: 40px 10% 80px;
-   background: var(--gray85);
-}
 
 .it-page + .it-page {
    padding-top: 20px;
@@ -400,7 +395,6 @@ body {
 
 /* ---------------------- Backgrounds ---------------------------- */
                         /* Computer Repair */
-.it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair_maintenance.jpg") center/cover no-repeat;}
                   /* IT Asset Management */
 .it-page .vision { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;}
                   /* IT Support / Helpdesk */
