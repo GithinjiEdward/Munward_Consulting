@@ -352,38 +352,44 @@ body {
    5e. UNIQUE CARD BACKGROUNDS (NO MORE "+" SELECTORS)
 ============================================================ */
 /* Group 1: Standard About Us */
-.mission { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/mission.png") center/cover; }
-.vision { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/vision.png") center/cover; }
-.team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
-.philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
+.mission        { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/mission.png") center/cover; }
+.vision         { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/vision.png") center/cover; }
+.team           { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
+.philosophy     { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
 
 /* Group 2: IT Services (Use these classes in it.html) */
-
-.it-repairs { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair_maintenance.jpg") center/cover no-repeat;}
-.it-management { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;}
-.it-support { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_support.jpg") center/cover no-repeat;}
+.it-repairs     { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair_maintenance.jpg") center/cover no-repeat;}
+.it-management  { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;}
+.it-support     { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_support.jpg") center/cover no-repeat;}
 .it-consultancy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_consultancy.jpg") center/cover no-repeat;}
+.it-network     { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/networking.jpg") center/cover;}
+.it-lanwan      { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/lan_wan.jpg") center/cover;}
+.it-wireless    { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/wireless.jpg") center/cover;}
+.it-security    { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/network_security.jpg") center/cover;}
 
+/* Group 3: HR Services (Use these classes in hr.html) */
+.hr-recruitment { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/recruitment.jpg') center/cover no-repeat; }
+.hr-onboarding  { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/onboarding.jpg') center/cover no-repeat; }
+.hr-payroll     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/payroll.jpg') center/cover no-repeat; }
+.hr-records     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/records.png') center/cover no-repeat; }
+.hr-performance { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/performance.jpg') center/cover no-repeat; }
+.hr-training    { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/training.jpg') center/cover no-repeat; }
+.hr-relations   { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/relations.jpg') center/cover no-repeat; }
+.hr-audit       { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hr-compliance.png') center/cover no-repeat; }
 
-
-
-.it-page + .it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/networking.jpg") center/cover;}
-.it-page + .it-page .vision { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/lan_wan.jpg") center/cover;}
-.it-page + .it-page .team { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/wireless.jpg") center/cover;}
-.it-page + .it-page .philosophy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/network_security.jpg") center/cover;}
+/* Group 4: Accounting Services (Use these classes in accounting.html) */
+.acc-bookkeeping    { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/bookkeeping.jpg") center/cover no-repeat; }
+.acc-reconciliation { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/reconciliation.jpg") center/cover no-repeat;}
+.acc-reporting      { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/financial_reporting.jpg") center/cover no-repeat; }
+.acc-consultancy    { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/accounting_consultancy.jpg") center/cover no-repeat; }
+.acc-tax-services   { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/tax_compliance.jpg") center/cover no-repeat; }
+.acc-internal-audit { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/audit.jpg") center/cover no-repeat; }
+.acc-registration   { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/registration.png") center/cover no-repeat; }
+.acc-consultation   { background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url("images/compliance.png") center/contain no-repeat; }
 
 /* ============================================================
    6. IT SERVICE PAGE (DETAILED)
 ============================================================ */
-
-.it-page + .it-page {
-   padding-top: 20px;
-}
-
-.it-page:not(:last-of-type) {
-   padding-bottom: 30px; /* reduce bottom padding of section 1 */
-}
-
 .it-page .about-card span {
    font-size: 12px;          /* slightly larger */
    font-weight: 700;         /* bold */
@@ -395,69 +401,6 @@ body {
    text-transform: uppercase;
    transform: translateY(12px);
 }
-
-/* ============================================================
-   7. ACCOUNTING PAGE – CARD BACKGROUNDS
-============================================================ */
-
-/* SECTION 1: FINANCIAL MANAGEMENT & REPORTING */
-.accounting-page .mission {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/bookkeeping.jpg") center/cover no-repeat;
-}
-
-.accounting-page .vision {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/reconciliation.jpg") center/cover no-repeat;
-}
-
-.accounting-page .team {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/financial_reporting.jpg") center/cover no-repeat;
-}
-
-.accounting-page .philosophy {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/accounting_consultancy.jpg") center/cover no-repeat;
-}
-
-/* SECTION 2: COMPLIANCE, AUDIT & BUSINESS ADVISORY */
-.accounting-page .it-page + .it-page .mission {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/tax_compliance.jpg") center/cover no-repeat;
-}
-
-.accounting-page .it-page + .it-page .vision {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/audit.jpg") center/cover no-repeat;
-}
-
-.accounting-page .it-page + .it-page .team {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/registration.png") center/cover no-repeat;
-}
-
-.accounting-page .it-page + .it-page .philosophy {
-  background: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
-              url("images/compliance.png") center/contain no-repeat;
-}
-
-/* ============================================================
-   8. HR PAGE UNIQUE CARD BACKGROUNDS
-============================================================ */
-
-/* Section 1 */
-.hr-recruitment { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/recruitment.jpg') center/cover no-repeat; }
-.hr-onboarding  { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/onboarding.jpg') center/cover no-repeat; }
-.hr-payroll     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/payroll.jpg') center/cover no-repeat; }
-.hr-records     { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/records.png') center/cover no-repeat; }
-
-/* Section 2 */
-.hr-performance { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/performance.jpg') center/cover no-repeat; }
-.hr-training    { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/training.jpg') center/cover no-repeat; }
-.hr-relations   { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/relations.jpg') center/cover no-repeat; }
-.hr-audit       { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('images/hr-compliance.png') center/cover no-repeat; }
-
 
 /* ============================================================
    7. MODALS
