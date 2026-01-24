@@ -360,6 +360,9 @@ body {
 /* Group 2: IT Services (Use these classes in it.html) */
 
 .it-repairs { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/repair_maintenance.jpg") center/cover no-repeat;}
+.it-management { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;}
+.it-support { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_support.jpg") center/cover no-repeat;}
+.it-consultancy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_consultancy.jpg") center/cover no-repeat;}
 
 
 
@@ -392,15 +395,6 @@ body {
    text-transform: uppercase;
    transform: translateY(12px);
 }
-
-/* ---------------------- Backgrounds ---------------------------- */
-                        /* Computer Repair */
-                  /* IT Asset Management */
-.it-page .vision { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/asset_management.jpg") center/cover no-repeat;}
-                  /* IT Support / Helpdesk */
-.it-page .team { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_support.jpg") center/cover no-repeat;}
-               /* IT Consultancy*/
-.it-page .philosophy { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/it_consultancy.jpg") center/cover no-repeat;}
 
 /* ============================================================
    7. ACCOUNTING PAGE – CARD BACKGROUNDS
