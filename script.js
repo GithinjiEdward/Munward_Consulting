@@ -1,16 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // Smooth scrolling
+  // 1. SMOOTH SCROLLING
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e){
       e.preventDefault();
       const targetId = this.getAttribute('href');
-      if(targetId && document.querySelector(targetId))
-        document.querySelector(targetId).scrollIntoView({behavior:'smooth'});
+      const targetElement = document.querySelector(targetId);
+      if(targetId && targetElement) {
+        targetElement.scrollIntoView({behavior:'smooth'});
+    }
+      const navLinks = document.querySelector('.nav-links');
+      if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+      }
     });
   });
 
-  // CONTACT FORM
+  // 2. CONTACT FORM SUBMISSION
   const contactForm = document.getElementById('contactForm');
   if(contactForm){
     contactForm.addEventListener('submit', function(e){
@@ -24,59 +30,65 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== MODAL LOGIC (THIS NOW WORKS) =====
+  // 3. MODAL LOGIC (THIS NOW WORKS) 
 document.querySelectorAll('.about-card').forEach(card => {
   card.addEventListener('click', () => {
     const modalId = card.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
-    if (modal) modal.classList.add('active');
+    if (modal) {
+      modal.style.display = 'flex';
+      setTimeout(() => modal.classList.add('active'), 10);
+    }
   });
 });
 
 // CLOSE BUTTON
 document.querySelectorAll('.modal .close').forEach(closeBtn => {
   closeBtn.addEventListener('click', () => {
-    closeBtn.closest('.modal').classList.remove('active');
+    const modal = closeBtn.closest('.modal');
+    modal.classList.remove('active');
+    setTimeout(() => modal.style.display = 'none', 300;
   });
 });
 
 // CLICK OUTSIDE TO CLOSE
-document.querySelectorAll('.modal').forEach(modal => {
-  modal.addEventListener('click', e => {
-    if (e.target === modal) modal.classList.remove('active');
+window.addEventListener('click', e => {
+    if (e.target.classList.contains('modal')) {
+      e.target.classList.remove('active');
+      setTimeout(() => e.target.style.display = 'none', 300);
+    }
   });
-});
 
 // ESC KEY TO CLOSE
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    document.querySelectorAll('.modal.active').forEach(modal => {
-      modal.classList.remove('active');
-    });
-  }
-});
-
-  // SERVICES DROPDOWN (MOBILE TAP)
-document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-  toggle.addEventListener('click', e => {
-    if (window.innerWidth <= 768) {
-      e.preventDefault();
-      toggle.parentElement.classList.toggle('open');
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.active').forEach(modal => {
+        modal.classList.remove('active');
+        setTimeout(() => modal.style.display = 'none', 300);
+      });
     }
   });
-});
 
+  // 4. SERVICES DROPDOWN (MOBILE TAP)
+document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', e => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        toggle.parentElement.classList.toggle('open');
+      }
+    });
+  });
 
-  // FOOTER YEAR
-  const currentYear = document.getElementById('current-year');
-  if(currentYear) currentYear.textContent = new Date().getFullYear();
-
-  // HAMBURGER MENU
+  // 5. HAMBURGER MENU
   const hamburger = document.querySelector('.hamburger');
   const navLinks = document.querySelector('.nav-links');
-  if(hamburger && navLinks){
-    hamburger.addEventListener('click', function(){
+  if(hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
       navLinks.classList.toggle('active');
     });
   }
+
+  // 6. DYNAMIC FOOTER YEAR
+  const currentYear = document.getElementById('current-year');
+  if(currentYear) currentYear.textContent = new Date().getFullYear();
 });
