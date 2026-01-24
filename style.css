@@ -282,23 +282,7 @@ body {
    align-items: center;
 }
 
-
-
-
-
-
-
-.logo-page {
-  background: var(--gray85);
-  padding: 80px 8% 90px;
-}
-
-.logo-grid { 
-   display: grid; 
-   grid-template-columns: 0.8fr, 1.2fr; 
-   gap: 20px; 
-}
-
+/* 5b. Typography & Tags */
 .about-tag {
    color: var(--accent); 
    font-weight: 600; 
@@ -315,31 +299,6 @@ body {
    color: var(--primary);
 }
 
-.about h2 { 
-   font-size: 28px; 
-   color: var(--primary); 
-   margin-bottom: 10px; 
-}
-.about p { 
-   font-size: 16px; 
-   max-width: 750px; 
-   margin: auto; 
-   color: var(--text-dark); 
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.about-text h1 { 
-   font-size: 40px; 
-   line-height: 1.1; 
-   margin: 8px 0 14px; 
-   color: var(--primary); 
-} 
-
 .about-text p { 
    color: #555; 
    line-height: 1.7; 
@@ -352,21 +311,36 @@ body {
    color: #222; 
 }
 
-/* ------------------- Cards --------------------------- */
+
+
+.logo-grid { 
+   display: grid; 
+   grid-template-columns: 0.8fr, 1.2fr; 
+   gap: 20px; 
+}
+
+/* 5c. Grid for Mission/Vision/Team Cards */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* 5d. Card Base Style */
+
 .about-card {
    position: relative;
    height: 180px;
    border-radius: var(--radius);
    display: flex;
-   overflow: hidden;
    align-items: flex-end;
    padding: 20px;
-   background: var(--service-bg);
-   font-weight: 700;
-   transition: var(--transition);
-   text-align: center;
+   overflow: hidden;
    cursor: pointer;
    transition: transform 0.35s ease, box-shadow 0.35s ease;
+   color: var(--white); /* Ensures text is visible over dark overlays */
+   font-weight: 700;
+   text-align: center;
 }
 
 .about-card:hover {
@@ -374,11 +348,15 @@ body {
   box-shadow: 0 20px 40px rgba(0,0,0,0.18);
 }
 
-/* ---------------------- Backgrounds ---------------------------- */
+/* ============================================================
+   5e. UNIQUE CARD BACKGROUNDS (NO MORE "+" SELECTORS)
+============================================================ */
+/* Group 1: Standard About Us */
 .mission { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/mission.png") center/cover; }
 .vision { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/vision.png") center/cover; }
 .team { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/our_team.jpg") center/cover; }
 .philosophy { background: linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)), url("images/philosophy.jpg") center/cover; }
+
 
 
 .it-page + .it-page .mission { background: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)), url("images/networking.jpg") center/cover;}
