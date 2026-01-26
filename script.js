@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 3. MODAL LOGIC (THIS NOW WORKS) 
+  // 3. MODAL LOGIC
 document.querySelectorAll('.about-image-card').forEach(card => {
   card.addEventListener('click', () => {
     const modalId = card.getAttribute('data-modal');
@@ -47,7 +47,7 @@ document.querySelectorAll('.modal .close').forEach(closeBtn => {
   closeBtn.addEventListener('click', () => {
     const modal = closeBtn.closest('.modal');
     modal.classList.remove('active');
-    setTimeout(() => modal.style.display = 'none', 300;
+    setTimeout(() => modal.style.display = 'none', 300);
   });
 });
 
