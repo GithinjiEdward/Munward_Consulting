@@ -578,7 +578,7 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
     right: 0;
     background: var(--gray85);
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 0;
     display: none;
     flex-direction: column;
     border-radius: 0;
@@ -590,16 +590,27 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
     display: flex;
   }
 
+   .nav-links li {
+      width: 100%;
+      text-align: center;
+   }
+
+   .nav-links a {
+      dislay: block;
+      padding: 12px 0;
+   }
+
   /* SERVICES DROPDOWN (MOBILE) */
   .dropdown-menu {
     position: relative;
     display: none;
-    background: var(--service-bg);
+    background: var(--gray85);
     width: 100%;
     padding: 0;
     border-radius: 0;
     box-shadow: none;
      top: 0;
+     z-index: auto;
   }
 
   .dropdown.open .dropdown-menu {
@@ -607,7 +618,8 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
   }
 
    .dropdown-menu li a {
-      padding: 12px 30px;
+      padding: 12px 20px;
+      font-size: 15px;
       border-bottom: 1px solid rgba(0,0,0,0.05);
    }
 
