@@ -4,11 +4,18 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e){
       e.preventDefault();
+
       const targetId = this.getAttribute('href');
+
+      // Skip invalid anchors like "#" or empty
+      if (!targetId || targetId === "#") return;
+
       const targetElement = document.querySelector(targetId);
-      if(targetId && targetElement) {
-        targetElement.scrollIntoView({behavior:'smooth'});
-    }
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      // Close mobile nav if open
       const navLinks = document.querySelector('.nav-links');
       if (navLinks && navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
@@ -23,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       const formMessage = document.getElementById("formMessage");
       if(formMessage){
-        formMessage.innerText = "Thank you! Your message has been received, and we shall get back to you shortly..";
+        formMessage.innerText = "Thank you! Your message has been received.";
         formMessage.style.color = "#273153";
       }
       contactForm.reset();
@@ -31,36 +38,36 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 3. MODAL LOGIC
-document.querySelectorAll('.about-image-card').forEach(card => {
-  card.addEventListener('click', () => {
-    const modalId = card.getAttribute('data-modal');
-    const modal = document.getElementById(modalId);
-    if (modal) {
-      modal.style.display = 'flex';
-      setTimeout(() => modal.classList.add('active'), 10);
-    }
+  document.querySelectorAll('.about-image-card').forEach(card => {
+    card.addEventListener('click', () => {
+      const modalId = card.getAttribute('data-modal');
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.style.display = 'flex';
+        setTimeout(() => modal.classList.add('active'), 10);
+      }
+    });
   });
-});
 
-// CLOSE BUTTON
-document.querySelectorAll('.modal .close').forEach(closeBtn => {
-  closeBtn.addEventListener('click', () => {
-    const modal = closeBtn.closest('.modal');
-    modal.classList.remove('active');
-    setTimeout(() => modal.style.display = 'none', 300);
+  // CLOSE BUTTON
+  document.querySelectorAll('.modal .close').forEach(closeBtn => {
+    closeBtn.addEventListener('click', () => {
+      const modal = closeBtn.closest('.modal');
+      modal.classList.remove('active');
+      setTimeout(() => modal.style.display = 'none', 300);
+    });
   });
-});
 
-// CLICK OUTSIDE TO CLOSE
-window.addEventListener('click', e => {
+  // CLICK OUTSIDE TO CLOSE
+  window.addEventListener('click', e => {
     if (e.target.classList.contains('modal')) {
       e.target.classList.remove('active');
       setTimeout(() => e.target.style.display = 'none', 300);
     }
   });
 
-// ESC KEY TO CLOSE
-document.addEventListener('keydown', e => {
+  // ESC KEY TO CLOSE
+  document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
       document.querySelectorAll('.modal.active').forEach(modal => {
         modal.classList.remove('active');
@@ -70,15 +77,11 @@ document.addEventListener('keydown', e => {
   });
 
   // 4. SERVICES DROPDOWN (MOBILE TAP)
-document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
     toggle.addEventListener('click', e => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
-        const parent = toggle.parentElement;
-        document.querySelectorAll('.dropdown').forEach(drop => {
-          if(drop !== parent) drop.classList.remove('open');
-        });
-        parent.classList.toggle('open');
+        toggle.parentElement.classList.toggle('open');
       }
     });
   });
@@ -88,13 +91,12 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   const navLinks = document.querySelector('.nav-links');
   if(hamburger && navLinks) {
     hamburger.addEventListener('click', function() {
-      if(window.innerWidth <=768) {
       navLinks.classList.toggle('active');
-      }
     });
   }
 
   // 6. DYNAMIC FOOTER YEAR
   const currentYear = document.getElementById('current-year');
   if(currentYear) currentYear.textContent = new Date().getFullYear();
+
 });
