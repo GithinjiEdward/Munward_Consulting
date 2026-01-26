@@ -525,17 +525,49 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
   .hero p, .it-hero p, .hr-hero p, .accounting-hero p { font-size: 15px; margin-bottom: 15px; }
 }
 
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex !important;  /* force display on desktop */
+    flex-direction: row;
+    position: static;
+    background: none;
+    box-shadow: none;
+    width: auto;
+    gap: 25px;
+  }
+
+  .hamburger { display: none; }  /* hide hamburger on desktop */
+}
+
 @media (max-width: 768px) {
-  .nav-links { width: 100%; right: 0; top: 60px; padding: 15px 20px; display: none; flex-direction: column; box-shadow: var(--shadow); }
-  .nav-links.active { display: flex; }
-  .hamburger { display: flex; }
-  .dropdown-menu { position: static; box-shadow: none; }
-  .about-container, .service-container, .value-container, .about-page-container, .logo-page-container, .it-page-container { grid-template-columns: 1fr; gap: 20px; }
-  .logo-page, .about-page, .it-page, .hr-page, .acc-page { padding: 40px 5%; }
-  .about-card, .service-card, .value-card { padding: 18px 12px; }
-  .values-image-wrapper img, .about-image-card img { width: 100%; height: auto; }
-  .contact-container { grid-template-columns: 1fr; padding: 30px; gap: 30px; }
-  .contact-form button { width: 100%; }
+   .navbar { 
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+   }
+   .nav-links { width: 100%; right: 0; top: 60px; padding: 15px 20px; display: none; flex-direction: column; box-shadow: var(--shadow); }
+   .nav-links.active { display: flex; }
+   .hamburger { display: flex; order: 2;}
+   .logo-img { order: 1; height: 45px; }
+   .dropdown-menu { 
+      position: static; 
+      display: none;
+      background: none;
+      width: 100%;
+      margin: 0;
+      padding: 10px 0;
+      border-radius: 0;
+      box-shadow: none; 
+   }
+   .dropdown.active .dropdown-menu { display: block; }
+   .why-choose-us .logo-grid img { margin: 0 auto; display: block;}
+   .about-container, .service-container, .value-container, .about-page-container, .logo-page-container, .it-page-container { grid-template-columns: 1fr; gap: 20px; }
+   .logo-page, .about-page, .it-page, .hr-page, .acc-page { padding: 40px 5%; }
+   .about-card, .service-card, .value-card { padding: 18px 12px; }
+   .values-image-wrapper img, .about-image-card img { width: 100%; height: auto; }
+   .contact-container { grid-template-columns: 1fr; padding: 30px; gap: 30px; }
+   .contact-form button { width: 100%; }
   footer { font-size: 13px; }
 }
 
