@@ -134,7 +134,7 @@ body {
    4. SERVICES / PARTNER / GENERIC SECTIONS
 ============================================================ */
 /* 4a. Section Layouts */
-.about, .services, .partner-us-section, {
+.about, .services, .partner-us-section {
    background: var(--gray85);
    padding: 15px 10%;
    text-align: center;
