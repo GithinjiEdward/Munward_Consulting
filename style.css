@@ -134,13 +134,13 @@ body {
    4. SERVICES / PARTNER / GENERIC SECTIONS
 ============================================================ */
 /* 4a. Section Layouts */
-.about, .services, .partner-us-section, .partner-us-consult {
+.about, .services, .partner-us-section, {
    background: var(--gray85);
    padding: 15px 10%;
    text-align: center;
 }
 
-.partner-us-consult { padding-top: 0; padding-bottom: 20px; }
+.partner-us-consult { background: var(--gray85); text-align: center; padding-top: 0; padding-bottom: 20px; }
 
 .services h2, .partner-us-section h2, .about h2 {
   font-size: 28px;
@@ -221,7 +221,7 @@ body {
 }
 
 .about-page, .logo-page, .it-page, .hr-page, .acc-page {
-  padding: 60px 8% 80px;
+  padding: 30px 8% 30px;
   background: var(--gray85);
 }
 
@@ -231,7 +231,7 @@ body {
    border-radius: var(--radius); 
    display: grid; 
    grid-template-columns: 1.1fr 1fr; 
-   gap: 60px; 
+   gap: 30px; 
    align-items: center;
 }
 
