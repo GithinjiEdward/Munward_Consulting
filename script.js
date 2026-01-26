@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         targetElement.scrollIntoView({behavior:'smooth'});
     }
       const navLinks = document.querySelector('.nav-links');
-      if (navLinks.classList.contains('active')) {
+      if (navLinks && navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
       }
     });
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       e.preventDefault();
       const formMessage = document.getElementById("formMessage");
       if(formMessage){
-        formMessage.innerText = "Thank you! Your message has been received.";
+        formMessage.innerText = "Thank you! Your message has been received, and we shall get back to you shortly..";
         formMessage.style.color = "#273153";
       }
       contactForm.reset();
@@ -74,7 +74,11 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
     toggle.addEventListener('click', e => {
       if (window.innerWidth <= 768) {
         e.preventDefault();
-        toggle.parentElement.classList.toggle('open');
+        const parent = toggle.parentElement;
+        document.querySelectorAll('.dropdown').forEach(drop => {
+          if(drop !== parent) drop.classList.remove('open');
+        });
+        parent.classList.toggle('open');
       }
     });
   });
@@ -84,7 +88,9 @@ document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
   const navLinks = document.querySelector('.nav-links');
   if(hamburger && navLinks) {
     hamburger.addEventListener('click', function() {
+      if(window.innerWidth <=768) {
       navLinks.classList.toggle('active');
+      }
     });
   }
 
