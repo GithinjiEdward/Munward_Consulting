@@ -584,6 +584,7 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
     border-radius: 0;
     box-shadow: var(--shadow);
     z-index: 2000;
+     text-align: center;
   }
 
   .nav-links.active {
@@ -592,12 +593,15 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
 
    .nav-links li {
       width: 100%;
+      display: block;
       text-align: center;
    }
 
    .nav-links a {
-      dislay: block;
+      display: block;
       padding: 12px 0;
+      width: 100%;
+      text-align: center;
    }
 
   /* SERVICES DROPDOWN (MOBILE) */
@@ -608,6 +612,7 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
     width: 100%;
     padding: 0;
     border-radius: 0;
+     list-style: none;
     box-shadow: none;
      top: 0;
      z-index: auto;
@@ -620,7 +625,7 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
    .dropdown-menu li a {
       padding: 12px 20px;
       font-size: 15px;
-      border-bottom: 1px solid rgba(0,0,0,0.05);
+      text-align: center;
    }
 
   /* ---------- ABOUT / WHY CHOOSE US LOGO CENTERING ---------- */
