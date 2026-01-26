@@ -577,11 +577,11 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
     top: 60px;
     right: 0;
     background: var(--gray85);
-    width: 200px;
+    width: 100%;
     padding: 15px 20px;
     display: none;
     flex-direction: column;
-    border-radius: var(--radius);
+    border-radius: 0;
     box-shadow: var(--shadow);
     z-index: 2000;
   }
@@ -592,19 +592,24 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
 
   /* SERVICES DROPDOWN (MOBILE) */
   .dropdown-menu {
-    position: absolute;
+    position: relative;
     display: none;
-    background: var(--gray85);
-    width: 180px;
-    padding: 10px 0;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    z-index: 2500;
+    background: var(--service-bg);
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+     top: 0;
   }
 
   .dropdown.open .dropdown-menu {
     display: block;
   }
+
+   .dropdown-menu li a {
+      padding: 12px 30px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+   }
 
   /* ---------- ABOUT / WHY CHOOSE US LOGO CENTERING ---------- */
   .logo-page-container {
