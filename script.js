@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // 3. MODAL LOGIC (THIS NOW WORKS) 
-document.querySelectorAll('.about-card').forEach(card => {
+document.querySelectorAll('.about-image-card').forEach(card => {
   card.addEventListener('click', () => {
     const modalId = card.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
