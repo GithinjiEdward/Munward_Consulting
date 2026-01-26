@@ -254,7 +254,7 @@ body {
 .about-text p { color: #555; line-height: 1.7; margin-bottom: 18px; } 
 .about-highlight { font-style: italic; font-weight: 600; color: #222; }
 .about-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-.about-card {
+.about-image-card {
    position: relative;
    height: 180px;
    border-radius: var(--radius);
