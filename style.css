@@ -313,7 +313,7 @@ body {
 /* ============================================================
    6. SERVICE CARD TYPOGRAPHY & OVERLAYS
 ============================================================ */
-.about-card span {
+.about-card span, .about-image-card span {
    font-size: 12px;       
    font-weight: 700;        
    color: var(--accent);
@@ -335,7 +335,7 @@ body {
    z-index: 1;
 }
 
-.about-card:hover span { transform: translateY(0px); color: var(--white); }
+.about-card:hover span, .about-image-card:hover span { transform: translateY(0px); color: var(--white); }
 
 .logo-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 20px; align-items: center; }
 
