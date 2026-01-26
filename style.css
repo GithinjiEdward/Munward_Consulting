@@ -269,7 +269,7 @@ body {
    text-align: center;
 }
 
-.about-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.18); }
+.about-image-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.18); }
 
 /* ============================================================
    6. UNIQUE CARD BACKGROUNDS (NO MORE "+" SELECTORS)
