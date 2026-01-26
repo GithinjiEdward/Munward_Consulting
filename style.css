@@ -90,7 +90,6 @@ body {
    background-size: cover;
    background-repeat: no-repeat;
    color: var(--primary);
-   animation: scaleIn 0.5s ease;
 }
 
 .hero h1, .it-hero h1, .hr-hero h1, .accounting-hero h1 {
