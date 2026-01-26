@@ -140,7 +140,13 @@ body {
    text-align: center;
 }
 
-.partner-us-consult { background: var(--gray85); text-align: center; padding-top: 0; padding-bottom: 20px; }
+.partner-us-consult { 
+   background: var(--gray85); 
+   text-align: center; 
+   padding-top: 0; 
+   padding-bottom: 20px; 
+   padding: 15px 10%;
+}
 
 .services h2, .partner-us-section h2, .about h2 {
   font-size: 28px;
