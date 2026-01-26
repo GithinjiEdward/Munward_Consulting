@@ -476,7 +476,7 @@ body {
 }
 
 /* ============================================================
-   9. FOOTER
+   11. FOOTER
 ============================================================ */
 footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; margin-top: 0; }
 .footer-container {
@@ -512,7 +512,7 @@ footer { background: var(--primary); color: var(--gray85); padding: 20px 30px; m
 }
 
 /* ============================================================
-   10. RESPONSIVE & ANIMATIONS
+   12. RESPONSIVE & ANIMATIONS
 ============================================================ */
 /* ---------- Tablet adjustments ---------- */
 @media (max-width: 1024px) {
