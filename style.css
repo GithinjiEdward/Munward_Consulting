@@ -201,6 +201,10 @@ body {
    cursor: pointer;
 }
 
+.dropdown-toggle::after {
+   content: none !important;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
