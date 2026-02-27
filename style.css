@@ -42,7 +42,7 @@ body {
    z-index: 1000;
 }
 
-.logo-img { max-height: 50px;}
+.logo-img { max-height: 100px;}
 
 .nav-links {
   list-style: none;
