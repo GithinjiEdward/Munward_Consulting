@@ -1,235 +1,382 @@
-<!DOCTYPE html> 
-<html lang="en" itemscope itemtype="http://schema.org/WebPage"> 
-	<head> 
-		<meta charset="UTF-8"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Professional HR, IT & Accounting Services | Munward Consulting Partners</title> 
-		
-<!------------------------------------------- 
-		SEO 
---------------------------------------------> 
-		<meta name="description" content="Munward Consulting Partners provides integrated HR, IT, and Accounting services in Nairobi. Recruitment, IT support, cybersecurity, bookkeeping, payroll, and compliance for growing businesses."> 
-		<link rel="canonical" href="https://www.mkconsultants.com"> 
-		
-<!-- Open Graph --> 
-		<meta property="og:locale" content="en_KE"> 
-		<meta property="og:type" content="website"> 
-		<meta property="og:title" content="HR, IT, & Accounting Consultancy | Munward Consulting Partners"> 
-		<meta property="og:description" content="One trusted partner for HR consulting, IT services, and accounting solutions in Kenya."> 
-		<meta property="og:image" content="logo.png"> 
-		<meta property="og:url" content="https://www.mkconsultants.com"> 
-		<meta property="og:site_name" content="Munward Consulting Partners"> 
-		
-<!-- Styles --> 
-		<link rel="stylesheet" href="style.css"> 
-		
-<!-- Icons (Font Awesome) --> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />	</head> 
-<body> 
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#273153">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo_1.png">
+  <link rel="apple-touch-icon" href="logo_1.png">
 
-<!------------------------------------------------- 
-	HEADER / NAVBAR 
----------------------------------------------------> 
-	<header class="navbar"> 
-		<div class="logo"> 
-			<img src="logo.png" alt="Munward Consulting Partners Logo" class="logo-img"> 
-		</div>
-		
-		<nav> 
-			<ul class="nav-links"> 
-				<li><a href="index.html">Home</a></li> 
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle"> Services</a>
-					<ul class="dropdown-menu">
-						<li><a href="accounting.html">Accounting Consultancy</a></li>
-						<li><a href="hr.html">HR Consultancy</a></li>
-						<li><a href="it.html">IT Consultancy</a></li>
-					</ul>
-				</li>
-				<li><a href="about.html">About</a></li> 
-				<li><a href="contact.html">Contact</a></li> 
-			</ul> 
-		</nav>
-		
-<!-- Hamburger menu for Mobile -->
-		<div class="hamburger" arial-label="Toggle menu">
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-	</header> 
-	
-<!-----------------------------------------------
-			HERO SECTION 
--------------------------------------------------> 
-	<section id="home" class="hero"> 
-		<h1>Expert Solutions for Growing Businesses</h1> 
-		<p>One trusted consultancy providing Human Resources, Information Technology, and Accounting Services to support sustainable business growth</p> 
-	</section> 
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 
-<!-------------------------------------------------- 
-			CORE PRACTICE AREAS 
-----------------------------------------------------> 
-	<section id="services" class="services"> 
-		<h2>Our Core Practice Areas</h2>
-		
-		<div class="service-container">
-			
-			<!-- HR SERVICES -->
-			<div class="service-card"> 
-				<img src="images/hr.png" alt="HR Consulting" class="service-icon"> 
-				<h3>Human Resources Consulting</h3> 
-				<p>Recruitment, HR policy development, compliance, employee training, performance management, and payroll support.</p> 
-			</div> 
+  <title>Munward Consulting Partners | HR, IT & Accounting Advisory in Nairobi</title>
+  <meta name="description" content="Munward Consulting Partners provides elite HR, IT, and Accounting consultancy in Nairobi. Compliance, cybersecurity, payroll, bookkeeping, and operational controls for growth-focused organizations.">
+  <link rel="canonical" href="https://www.mkconsultants.com">
+  <meta property="og:locale" content="en_KE">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Munward Consulting Partners | HR, IT & Accounting Consultancy">
+  <meta property="og:description" content="One trusted partner for HR consulting, IT services, and accounting solutions in Kenya.">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:url" content="https://www.mkconsultants.com">
+  <meta property="og:site_name" content="Munward Consulting Partners">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Munward Consulting Partners",
+    "url": "https://www.mkconsultants.com",
+    "logo": "https://www.mkconsultants.com/logo.png",
+    "image": "https://www.mkconsultants.com/logo.png",
+    "description": "Integrated HR, IT, and Accounting consultancy services in Nairobi, Kenya.",
+    "areaServed": "KE",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/",
+      "https://www.facebook.com/",
+      "https://x.com/"
+    ]
+  }
+  </script>
 
-			<!-- IT SERVICES -->
-			<div class="service-card"> 
-				<img src="images/it.png" alt="IT Services" class="service-icon"> 
-				<h3>IT Services & Support</h3> 
-				<p>IT infrastructure setup, network administration, cybersecurity, cloud solutions, ERP systems, and technical support</p> 
-			</div> 
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-			<!-- ACCOUNTING SERVICES -->
-			<div class="service-card"> 
-				<img src="images/accounting.png" alt="Accounting Services" class="service-icon"> 
-				<h3>Accounting & Financial Services</h3> 
-				<p>Bookkeeping, financial reporting, payroll processing, tax compliance, budgeting, and advisory services.</p> 
-			</div> 
-			 
-		</div> 
-	</section> 
-	
-	
-<!------------------------------------------------- 
-			WHY PARTNER WITH US 
----------------------------------------------------> 
-	<section id="partner" class="partner-us-section"> 
-		<h2>Why Partner With US</h2> 
-		<div class="value-container"> 
-			
-			<div class="value-card"> 
-			<i class="fas fa-briefcase partner-icon"></i> 
-				<h3>Multi-Disciplinary Expertise</h3> 
-				<p>Access HR, IT, and accounting professionals under one integrated consultancy.</p> 
-			</div> 
-			
-			<div class="value-card"> 
-				<i class="fas fa-coins partner-icon"></i> 
-				<h3>Cost-Efficient Solutions</h3> 
-				<p>Reduce operational costs by consolidating professional services into a single trusted partner.</p> 
-			</div> 
-			
-			<div class="value-card"> 
-				<i class="fas fa-shield-alt partner-icon"></i> 
-				<h3>Complaince & Security</h3> 
-				<p>We ensure regulatory compliance, data protection, and ethical business practices</p> 
-			</div>
-			
-			<div class="value-card"> 
-				<i class="fas fa-handshake partner-icon"></i> 
-				<h3>Long-Term Partnership</h3> 
-				<p>We work as an extension of your business, supporting growth at every stage.</p> 
-			</div> 
-			
-		</div> 
-	</section>
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Munward Consulting Partners Home">
+      <img src="logo.png" alt="Munward Consulting Partners" class="brand-logo">
+    </a>
 
-<!------------------------------------------------------
-				HOW WE WORK
--------------------------------------------------------->
-	<section class="partner-us-section">
-		<h2>How We Work</h2>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="primary-navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
 
-		<div class="service-container">
-			<div class="service-card">
-				<h3>1. Consultation</h3>
-		<p>We understand your business needs and objectives.</p>
-			</div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul id="primary-navigation" class="nav-links">
+        <li><a href="index.html" data-nav>Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-nav aria-haspopup="true" aria-expanded="false">Services</a>
+          <ul class="dropdown-menu" role="menu">
+            <li role="none"><a role="menuitem" href="hr.html">HR Consultancy</a></li>
+            <li role="none"><a role="menuitem" href="it.html">IT Consultancy</a></li>
+            <li role="none"><a role="menuitem" href="accounting.html">Accounting Consultancy</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" data-nav>About</a></li>
+        <li><a href="contact.html" data-nav>Contact</a></li>
+      </ul>
+    </nav>
 
-			<div class="service-card">
-				<h3>2. Assessment</h3>
-				<p>HR, IT, or Accounting audit based on your scope.</p>
-			</div>
-
-			<div class="service-card">
-				<h3>3. Implementation</h3>
-				<p>Deploy structured, compliant, and scalable solutions.</p>
-			</div>
-
-			<div class="service-card">
-				<h3>4. Ongoing Support</h3>
-				<p>Continuous advisory and improvement support.</p>
-			</div>
-		</div>
-	</section>
-
-<!------------------------------------------------------ 
-				ABOUT US
---------------------------------------------------------> 
-	<section class="about">
-  <h2>About Us</h2>
-
-  <div class="about-container">
-    <div class="about-card">Munward Consulting Partners is a Nairobi-based professional services firm offering integrated HR, IT, and accounting solutions. We help organizations streamline operations, improve compliance, strengthen systems, and manage people and finances effectively.</div>
+    <div class="header-cta">
+      <a class="btn btn-primary" href="contact.html">Book a Consultation</a>
+    </div>
   </div>
-</section>
+</header>
 
-<!------------------------------------------------
-			TRUST SIGNALS
-------------------------------------------------->
-<section class="services">
-  <h2>Why Clients Trust Us</h2>
+<main id="main">
+  <section class="hero hero-home">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot"></span> Nairobi • Kenya • Advisory + Execution</p>
+        <h1>Strategic IT, HR, and Accounting Solutions<br><span class="accent">for Growing Business</span></h1>
+        <p class="lead">
+          We help organizations streamline operations, strengthen governance, and build scalable systems through expert consulting in technology, human resources, and financial management.
+        </p>
 
-  <div class="service-container">
-    <div class="service-card">Trusted by growing businesses in Kenya</div>
-    <div class="service-card">Confidential & ethical service delivery</div>
-    <div class="service-card">Compliance-driven advisory services</div>
-    <div class="service-card">Cross-industry consulting experience</div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">Book a Strategy Call</a>
+          <a class="btn btn-ghost" href="#services">Explore Services</a>
+        </div>
+
+        <div class="trust-row">
+          <div class="trust-chip"><i class="fa-solid fa-shield-halved"></i> Compliance-first delivery</div>
+          <div class="trust-chip"><i class="fa-solid fa-lock"></i> Data & confidentiality</div>
+          <div class="trust-chip"><i class="fa-solid fa-chart-line"></i> Outcomes & accountability</div>
+        </div>
+      </div>
+
+      <div class="hero-panel reveal">
+        <div class="panel-card">
+          <h3>What you get</h3>
+          <ul class="checklist">
+            <li>Clear scope, timelines, and deliverables</li>
+            <li>Audit-ready documentation and controls</li>
+            <li>Executive reporting and decision support</li>
+            <li>Proactive risk and compliance management</li>
+          </ul>
+          <div class="panel-metrics">
+            <div class="metric">
+              <div class="metric-value" data-counter="24">0</div>
+              <div class="metric-label">hr response target</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value" data-counter="99">0</div>
+              <div class="metric-label">% accuracy focus</div>
+            </div>
+            <div class="metric">
+              <div class="metric-value" data-counter="3">0</div>
+              <div class="metric-label">core practices</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="logo-strip" aria-label="Trust indicators">
+	<div class="container reveal">
+	  <p class="muted center typing-container">
+		<span id="typing-text"></span><span class="cursor">|</span>
+	  </p>
+	</div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Core Practice Areas</h2>
+        <p class="muted">Pick a practice area or combine them for an integrated operating model.</p>
+      </div>
+
+      <div class="cards-3">
+        <article class="card reveal">
+          <div class="card-icon"><img src="images/hr.png" alt="" loading="lazy"></div>
+          <h3>Human Resources Consulting</h3>
+          <p>Recruitment, policies, performance systems, payroll oversight, compliance, and employee relations.</p>
+          <a class="card-link" href="hr.html">View HR services <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon"><img src="images/it.png" alt="" loading="lazy"></div>
+          <h3>IT Services & Support</h3>
+          <p>Infrastructure, networks, endpoint hardening, identity access, and business continuity controls.</p>
+          <a class="card-link" href="it.html">View IT services <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-icon"><img src="images/accounting.png" alt="" loading="lazy"></div>
+          <h3>Accounting & Financial Services</h3>
+          <p>Bookkeeping, reporting, tax compliance, payroll support, audit preparation, and controls.</p>
+          <a class="card-link" href="accounting.html">View accounting services <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="split">
+        <div class="reveal">
+          <h2>Why clients choose Munward</h2>
+          <p class="muted">
+            Most consultancies stop at advice. We combine advisory with hands-on implementation—so you actually see operational improvement.
+          </p>
+          <div class="bullets">
+            <div class="bullet">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <h4>Multi-disciplinary execution</h4>
+                <p class="muted">HR, IT, and accounting experts working as one delivery team.</p>
+              </div>
+            </div>
+            <div class="bullet">
+              <i class="fa-solid fa-shield"></i>
+              <div>
+                <h4>Governance & risk controls</h4>
+                <p class="muted">Built-in compliance checks, documentation, and audit readiness.</p>
+              </div>
+            </div>
+            <div class="bullet">
+              <i class="fa-solid fa-bolt"></i>
+              <div>
+                <h4>Speed with quality</h4>
+                <p class="muted">Fast turnaround without sacrificing structure and accuracy.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-grid reveal" aria-label="Key differentiators">
+          <div class="feature">
+            <div class="feature-top">
+              <span class="badge">Operating Model</span>
+            </div>
+            <h3>Clarity</h3>
+            <p class="muted">Processes, roles, and reporting so leadership can steer the business.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-top">
+              <span class="badge">Controls</span>
+            </div>
+            <h3>Control</h3>
+            <p class="muted">Internal controls that reduce leakage, risk, and operational surprises.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-top">
+              <span class="badge">Compliance</span>
+            </div>
+            <h3>Confidence</h3>
+            <p class="muted">Audit-ready records and policies aligned to Kenyan requirements.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-top">
+              <span class="badge">Growth</span>
+            </div>
+            <h3>Scale</h3>
+            <p class="muted">Systems and people operations built to grow with your organization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>How we work</h2>
+        <p class="muted">A clean delivery model that reduces risk and increases adoption.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">01</div>
+          <h3>Discovery</h3>
+          <p class="muted">We clarify scope, constraints, and success criteria.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">02</div>
+          <h3>Assessment</h3>
+          <p class="muted">Controls review, gap analysis, and priority roadmap.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">03</div>
+          <h3>Implementation</h3>
+          <p class="muted">Deploy processes, tooling, templates, and training.</p>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">04</div>
+          <h3>Ongoing Support</h3>
+          <p class="muted">Continuous monitoring, improvement, and advisory.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>What clients say</h2>
+        <p class="muted">Replace these placeholders with real testimonials once you have approvals.</p>
+      </div>
+
+      <div class="cards-3">
+        <figure class="quote reveal">
+          <blockquote>“Our payroll and HR records became audit-ready within weeks. Clear process, clean documentation.”</blockquote>
+          <figcaption><strong>Operations Lead</strong> • Nairobi</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>“They fixed control gaps in finance reporting and gave us dashboards leadership can actually use.”</blockquote>
+          <figcaption><strong>Finance Manager</strong> • SME</figcaption>
+        </figure>
+        <figure class="quote reveal">
+          <blockquote>“The IT hardening and access controls reduced incidents immediately. Strong security posture.”</blockquote>
+          <figcaption><strong>Head of IT</strong> • Services Firm</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>FAQs</h2>
+        <p class="muted">Fast answers to common questions.</p>
+      </div>
+
+      <div class="faq reveal" data-accordion>
+        <button class="faq-q" aria-expanded="false">Do you offer bundled HR + IT + Accounting support?</button>
+        <div class="faq-a" hidden>
+          Yes. Many clients choose an integrated scope to align controls, reporting, and operational workflows across departments.
+        </div>
+
+        <button class="faq-q" aria-expanded="false">How do you scope a consultancy engagement?</button>
+        <div class="faq-a" hidden>
+          We begin with discovery, then define deliverables, timeline, and success metrics. You get a clear statement of work before execution.
+        </div>
+
+        <button class="faq-q" aria-expanded="false">Can you support ongoing monthly operations?</button>
+        <div class="faq-a" hidden>
+          Yes. We offer ongoing support models (retainer or project-based) depending on your needs and internal capacity.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container cta-inner reveal">
+      <div>
+        <h2>Ready to strengthen your operations?</h2>
+        <p class="muted">Book a consultation and get a clear, actionable roadmap.</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Request a Consultation</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h3>Munward Consulting Partners</h3>
+      <p class="muted">Integrated HR, IT & Accounting solutions for growing businesses in Kenya.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="hr.html">HR Consultancy</a></li>
+        <li><a href="it.html">IT Consultancy</a></li>
+        <li><a href="accounting.html">Accounting Consultancy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Company</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#faq">FAQs</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><span class="muted">Email:</span> <a href="mailto:info@mkconsultants.com">info@mkconsultants.com</a></li>
+        <li><span class="muted">Phone:</span> <a href="tel:+254700000000">+254 (0) 700 000 000</a></li>
+        <li><span class="muted">Location:</span> Nairobi, Kenya</li>
+      </ul>
+    </div>
   </div>
-</section>
 
-<!------------------------------------------------------ 
-					FOOTER 
---------------------------------------------------------> 
-	<footer> 
-		<div class="footer-container"> 
-			
-			<div class="footer-column"> 
-				<h3>Munward Consulting Partners</h3> 
-				<p>Integrated HR, IT, & Accounting Solutions for Growing Businesses.</p> 
-				
-				<div class="social-links"> 
-					<a href="#" aria-label="LinkedIn">
-						<i class="fab fa-linkedin"></i></a> 
-					<a href="#" aria-label="Twitter">
-						<i class="fab fa-twitter"></i></a> 
-					<a href="#" aria-label="Facebook">
-						<i class="fab fa-facebook"></i></a> 
-				</div> 
-			</div> 
-			
-			<div class="footer-column"> 
-				<h3>Quick Links</h3> 
-				<ul> 
-					<li><a href="#home">Home</a></li> 
-					<li><a href="#services">Services</a></li> 
-					<li><a href="#partner">Why Partner</a></li> 
-					<li><a href="about.html">About Us</a></li> </ul> 
-			</div> 
-			<div class="footer-column"> 
-				<h3>Get In Touch</h3> 
-				<p>Email: <a href="mailto:info@mkconsultants.com">info@mkconsultants.com</a></p> 
-				<p>Phone: +254 (0) XX XXX XXX</p> 
-				<p>Nairobi, Kenya</p> 
-			</div> 
-			
-		</div> 
-		<div class="footer-bottom"> 
-			<p>&copy; 
-				<span id="current-year"></span> Munward Consulting Partners. All Rights Reserved.</p> 
-		</div> 
+  <div class="container footer-bottom">
+    <p class="muted">© <span id="current-year"></span> Munward Consulting Partners. All rights reserved.</p>
+  </div>
 </footer>
-	
-<script src="script.js"></script> 
-</body> 
+
+<script src="script.js" defer></script>
+</body>
 </html>
