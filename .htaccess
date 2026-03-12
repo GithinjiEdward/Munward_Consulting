@@ -1,14 +1,18 @@
 RewriteEngine On
 
-# 1. FORCE HOME: Redirect /index or /index.html to the bare domain (/)
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.(html|php|htm) [NC]
-RewriteRule ^(.*)index\.(html|php|htm)$ / [L,R=301]
+# 1. Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# 2. REMOVE .HTML: Redirect /page.html to /page
+# 2. Force Home: Redirect /index.html to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*index\.(html|php) [NC]
+RewriteRule ^(.*)index\.(html|php)$ / [L,R=301]
+
+# 3. Remove .html from the URL bar
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [L,R=301]
 
-# 3. INTERNAL MAPPING: Link the clean URL back to the file so it loads
+# 4. Check for the file internally so the page still loads
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
