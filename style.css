@@ -799,7 +799,8 @@ button{ font-family:inherit; }
   display:block;
   color:var(--muted);
   margin-top:4px;
-  font-weight:600;
+  font-size: 0.80rem;
+  font-weight:400;
 }
 
 .tile-bottoms{
